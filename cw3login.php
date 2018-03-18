@@ -1,29 +1,4 @@
 <!DOCTYPE html>
-<?php
-  ob_start();
-  $userName = "test";
-  $password = "test";
-  $error = "";
-
-  if ($_SERVER['REQUEST_METHOD'] == "POST")
-  {
-    if ($_POST['user'] == $userName)
-    {
-      if ($_POST['password'] == $password)
-      {
-        header("Location: cw3info.html");
-      }
-      else
-      {
-        $error.= "Password does not match";
-      }
-    }
-    else
-    {
-      $error .= "User name does not match";
-    }
-  }
-?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -56,3 +31,28 @@
 
   </body>
 </html>
+<?php
+  ob_start();
+  $userName = "test";
+  $password = "test";
+  $error = "";
+
+  if ($_SERVER['REQUEST_METHOD'] == "POST")
+  {
+    if ($_POST['user'] == $userName)
+    {
+      if ($_POST['password'] == $password)
+      {
+        header("Location: cw3info.html");
+      }
+      else
+      {
+        $error.= "Password does not match";
+      }
+    }
+    else
+    {
+      $error .= "User name does not match";
+    }
+  }
+?>
