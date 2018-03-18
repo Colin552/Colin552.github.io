@@ -33,6 +33,10 @@ video {
   width:100%;
 }
 
+iframe, object, embed{
+  max-width: 100%;
+}
+
 .Topic h3
 {
   text-align:center;
