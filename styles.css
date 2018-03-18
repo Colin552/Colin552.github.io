@@ -1,0 +1,39 @@
+header
+{
+  background-color: yellow;
+}
+
+header h1
+{
+  text-align:center;
+}
+
+header p
+{
+  margin-left: 10px;
+}
+
+body
+{
+  margin: 0px 0px 0px 0px;
+}
+
+.Container
+{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+audio {
+  width: 100%;
+}
+
+video {
+  width:100%;
+}
+
+.Topic h3
+{
+  text-align:center;
+}
